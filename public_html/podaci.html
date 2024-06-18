@@ -1,0 +1,85 @@
+<HTML>
+
+    <HEAD>
+        <title>Opšte informacije</title>
+    
+        <meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+        <style>
+            ul.black {
+                color: #000;
+                background-image: linear-gradient(to bottom right, rgb(255,192,203), rgb(255,105,180));
+            }
+    
+            form{
+                font-style: inherit;
+                color: black;
+                background-image: linear-gradient(to bottom right, rgb(255,192,203), rgb(255,105,180));
+            }
+    
+            input{
+                border-style: none;
+                color: #000;
+                background-color: aliceblue;
+            }
+        </style>
+    </HEAD>
+    
+    <BODY style="background-image:url(princeza.jpg)">
+        <H1 style="font-family:Lucida Handwriting">Podaci o browseru</H1>
+        <HR>
+        
+        <UL class="black">
+            <SCRIPT LANGUAGE="JavaScript">
+                document.write("<LI><B>Code Name:</B> " + navigator.appCodeName);
+                document.write("<LI><B>App Name:</B> " + navigator.appName);
+                document.write("<LI><B>App Version:</B> " + navigator.appVersion);
+                document.write("<LI><B>User Agent:</B> " + navigator.userAgent);
+                document.write("<LI><B>Language:</B> " + navigator.language);
+                document.write("<LI><B>Platform:</B> " + navigator.platform);
+            </SCRIPT>
+        </UL>
+    
+        <H1 style="font-family:Lucida Handwriting">Podaci o dokumentu</H1>
+        <HR>
+       
+        <UL class="black">
+            <SCRIPT LANGUAGE="JavaScript">
+                document.write("<B>document.lastModified:</B> " + document.lastModified + "<BR>")
+                document.write("<B>document.hostName:</B> " + document.hostname + "<BR>")
+                document.write("<B>document.tagName):</B> " + document.tagName + "<BR>")
+                document.write("<B>document.location:</B> " + document.location + "<BR>")
+                document.write("<B>document.location.href:</B> " + document.location.href + "<BR>")
+                document.write("<B>document.location.protocol:</B> " + document.location.protocol + "<BR>")
+                document.write("<B>document.location.host:</B> " + document.location.host + "<BR>")
+                document.write("<B>document.location.hostName:</B> " + document.location.hostName + "<BR>")
+                document.write("<B>document.location.port:</B> " + document.location.port + "<BR>")
+                document.write("<B>document.location.pathname:</B>" + document.location.pathname + "<BR>")
+                document.write("<B>document.location.search:</B> " + document.location.search + "<BR>")
+                document.write("<B>document.location.hash:</B> " + document.location.hash + "<BR>")
+            </SCRIPT>
+        </UL>
+    
+        <div class="black">
+            <FONT FACE="Courier">
+                <FORM name="mojaForma">
+                    Širina ekrana: <INPUT type="text" size="20" name="poljeSirina" value="nedefinisano"><BR>
+                    Visina ekrana: <INPUT type="text" size="20" name="poljeVisina" value="nedefinisano"><BR>
+                    ColorDepth: <input type="text" size="20" name="poljeBoja" value="nedefinisano"><BR>
+                    PixelDepth: <input type="text" size="20" name="poljePixela" value="nedefinisano"><BR>
+                </FORM>
+                <SCRIPT>
+                    //<!--
+                    function prikazi() { /*upis podataka u polja forme*/
+                        document.mojaForma.poljeSirina.value = screen.width
+                        document.mojaForma.poljeVisina.value = screen.height
+                        document.mojaForma.poljeBoja.value = screen.coIorDepth
+                        document.mojaForma.poljePixela.value = screen.pixelDepth
+                    }
+                    prikazi() /*poziv funkcije*/
+            //-->
+                </SCRIPT>
+            </FONT>
+        </div>
+    </BODY>
+    
+    </HTML>

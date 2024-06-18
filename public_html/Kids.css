@@ -1,0 +1,562 @@
+.header{
+    
+	background-image: url("princeza.jpg");
+}
+.sredina{
+    margin:0px auto;
+    width:1050px;
+	background-color:white;
+}
+html{
+	scroll-behavior:auto;
+}
+body{
+	margin:0px;
+	padding:0px;
+	font-family:Calibri,sans-serif;
+}
+#logo-i-social{
+	
+background-image: url("princeza.jpg");	
+display:grid;
+grid-template:"logo pr search"
+              "logo pr social" ;
+grid-template-columns:320px 1fr 195px;
+grid-template-rows:75px 75px;
+}
+#social-holder{
+	/*flex-grow:1;*/
+	grid-area:social;
+	text-align:right;
+	
+	}
+    #main-menu{
+        display:flex;
+		background-color:white;
+        
+    }
+    #main-menu a{
+        flex-grow:1;
+        text-align:center;
+        display:block;
+        padding: 10px 0;
+        text-decoration:none;
+		font-weight:bold;
+		font-style:italic;
+        color:black;
+        transition:400ms;
+		font-size:17px;
+    }
+    #main-menu a:hover,
+    #main-menu a.aktivna{
+        background:pink;
+        color:black;
+        
+    }
+    .logo{
+        
+        
+        flex-grow:1;
+	
+        
+    }
+	#logo-holder{
+		width:320px;
+        height:120px;
+		grid-area:logo;
+		display:flex;
+	}
+	
+.ikone{
+		width:30px;
+		height:30px;
+		margin:0px 5px;
+		justify-self:end;
+		padding-top:25px;
+	}
+	
+	
+	.search{
+	grid-area:search;
+	
+
+}
+	.korpa{
+	grid-area:search;
+	
+	width:40px;
+	height:40px;
+	padding-top:20px;
+	
+
+}
+#onlineshopnaslov{
+	font-weight:bold;
+	text-decoration:italic;
+	font-family:"Lucida Handwriting";
+	
+	font-size:20px;
+	
+}.onlineshoplink{
+	text-decoration:none;
+	color:black;
+}
+
+	/*.search input[type=text] {
+  
+  padding: 6px;
+  border: none;
+  margin-top: 15px;
+  margin-right: 16px;
+  font-size: 17px;
+  grid-area:search;
+  width:170px;
+}*/
+.footer .sredina{
+	border-top:2px solid red;
+	background-color:white;
+	font-size:15px;
+	
+}
+.footerlijevo{
+	text-align:left;
+	padding-left:50px;
+}   
+.footerdesno{
+	text-align:right;
+	padding-right:50px;
+}
+
+.footersredina{
+	text-align:center;
+	
+	
+}
+.red-link{
+	text-decoration:none;
+	/*padding-left:60px;*/
+	
+	color:red;
+}
+.footer>.sredina{
+	
+	display:flex;
+	background-image: url("pozadinaroza2.jpg");
+}
+
+.footer .footer-sredina{
+	flex-grow:1;
+	flex-basis:0;
+	padding-top:20px;
+	padding-bottom:20px;
+
+}
+.red-link:hover{
+	text-decoration:underline;
+	
+}
+#naslov{
+	font-family:"Lucida Handwriting";
+	font-size:28px;
+	color:rgb(255, 192, 231);
+	text-shadow: -2px 0 black, 0 1px black, 1px 0 black, 0 -2px black;
+	padding-top:25px;
+	padding-left:10px;
+	margin-top:0px;
+}
+#long{
+	background-image:url("princeza.jpg");
+	
+}
+.grid{
+	display:grid;
+	
+	grid-template:"1 2 3 4"
+	              "5 6 7 8"
+				  "9 10 11 12"
+				  "13 14 15 16"
+				  "17 18 19 20" ;
+	grid-template-columns:262px 262px 262px 262px;
+    grid-template-rows:50vh 50vh 50vh 50vh 50vh;
+	
+}
+#1{
+	grid-area:1;
+	
+	display:flex;
+}
+.linkovi{
+	width:100%;
+	height:80%;
+}
+.slikehaljina{
+	padding:5px;
+	width:252px;
+	height:80%;
+	
+}
+#2{
+	grid-area:2;
+	
+}
+#3{
+	grid-area:3;
+	
+}
+#4{
+	grid-area:4;
+	
+}
+#5{
+	grid-area:5;
+	
+}
+#20{
+	grid-area:20;
+	
+}
+#6{
+	grid-area:6;
+	
+}
+#7{
+	grid-area:7;
+	
+}
+#8{
+	grid-area:8;
+	
+}
+#9{
+	grid-area:9;
+	
+}
+#10{
+	grid-area:10;
+	
+}
+#11{
+	grid-area:11;
+	
+}
+#12{
+	grid-area:12;
+	
+}
+#13{
+	grid-area:13;
+	
+}
+#14{
+	grid-area:14;
+	
+}
+#15{
+	grid-area:15;
+	
+}
+#16{
+	grid-area:16;
+
+}
+#17{
+	grid-area:17;
+	
+}
+#18{
+	grid-area:18;
+	
+}
+#19{
+	grid-area:19;
+	
+}
+#kraj{
+	background-image:url("princeza.jpg");
+}
+.okvirovi{
+	font-family:"Verdana";
+	color:black;
+	font-size:12px;
+	margin-left:5px;
+	text-align:center;
+	
+}
+.stranica a:hover img { 
+width:99%;
+height:83%;
+}
+.ispisi{
+	font-size:13px;
+	color:rgb(0,0,0,0.5);
+	margin-top:0px;
+	margin-bottom:0px;
+}
+.pagination a{
+	 color: black;
+	 
+	 font-size:17px;
+  
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+.pagination a.active {
+  background-color: pink;
+  color: white;
+  font-weight:bold;
+}
+
+.pagination a:hover:not(.active)
+ {background-color: #ddd;}
+.pagination{
+	padding-bottom:20px;
+	/*margin-top:10px;*/
+	margin:auto;
+	text-align:center;
+}
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+ 
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  color: #b9b9b9;
+  background-color: #e3e3e3;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+h4 {
+  color: #f0a500;
+}
+input,
+input[type="radio"] + label,
+input[type="checkbox"] + label:before,
+select option,
+select {
+  width: 100%;
+  padding: 1em;
+  line-height: 1.4;
+  background-color: #f9f9f9;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+  -webkit-transition: 0.35s ease-in-out;
+  -moz-transition: 0.35s ease-in-out;
+  -o-transition: 0.35s ease-in-out;
+  transition: 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+input:focus {
+  outline: 0;
+  border-color: #bd8200;
+}
+input:focus + .input-icon i {
+  color: #f0a500;
+}
+input:focus + .input-icon:after {
+  border-right-color: #f0a500;
+}
+input[type="radio"] {
+  display: none;
+}
+input[type="radio"] + label,
+select {
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+  float: left;
+  border-radius: 0;
+}
+input[type="radio"] + label:first-of-type {
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+input[type="radio"] + label:last-of-type {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+input[type="radio"] + label i {
+  padding-right: 0.4em;
+}
+input[type="radio"]:checked + label,
+input:checked + label:before,
+select:focus,
+select:active {
+  background-color: #f0a500;
+  color: #fff;
+  border-color: #bd8200;
+}
+input[type="checkbox"] {
+  display: none;
+}
+input[type="checkbox"] + label {
+  position: relative;
+  display: block;
+  padding-left: 1.6em;
+}
+input[type="checkbox"] + label:before {
+  position: absolute;
+  top: 0.2em;
+  left: 0;
+  display: block;
+  width: 1em;
+  height: 1em;
+  padding: 0;
+  content: "";
+}
+input[type="checkbox"] + label:after {
+  position: absolute;
+  top: 0.45em;
+  left: 0.2em;
+  font-size: 0.8em;
+  color: #fff;
+  opacity: 0;
+  font-family: FontAwesome;
+  content: "\f00c";
+}
+input:checked + label:after {
+  opacity: 1;
+}
+select {
+  height: 3.4em;
+  line-height: 2;
+}
+select:first-of-type {
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+select:last-of-type {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+select:focus,
+select:active {
+  outline: 0;
+}
+select option {
+  background-color: #f0a500;
+  color: #fff;
+}
+.input-group {
+  margin-bottom: 1em;
+  zoom: 1;
+}
+.input-group:before,
+.input-group:after {
+  content: "";
+  display: table;
+}
+.input-group:after {
+  clear: both;
+}
+.input-group-icon {
+  position: relative;
+}
+.input-group-icon input {
+  padding-left:29px;
+  
+}
+.input-group-icon .input-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2.8em;
+  height: 3.4em;
+  line-height: 3.4em;
+  text-align: center;
+  pointer-events: none;
+}
+.input-group-icon .input-icon:after {
+  position: absolute;
+  top: 0.6em;
+  bottom: 0.6em;
+  left: 3.4em;
+  display: block;
+  /*border-right: 1px solid #e5e5e5;*/
+  content: "";
+  -webkit-transition: 0.35s ease-in-out;
+  -moz-transition: 0.35s ease-in-out;
+  -o-transition: 0.35s ease-in-out;
+  transition: 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.input-group-icon .input-icon i {
+  -webkit-transition: 0.35s ease-in-out;
+  -moz-transition: 0.35s ease-in-out;
+  -o-transition: 0.35s ease-in-out;
+  transition: 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.container {
+  max-width: 38em;
+  padding: 1em 3em 2em 3em;
+  margin: 0em auto;
+  background-color: #fff;
+  border-radius: 4.2px;
+  box-shadow: 0px 3px 10px -2px rgba(0, 0, 0, 0.2);
+}
+.row {
+  zoom: 1;
+}
+.row:before,
+.row:after {
+  content: "";
+  display: table;
+}
+.row:after {
+  clear: both;
+}
+.col-half {
+  padding-right: 10px;
+  float: left;
+  width: 50%;
+}
+.col-half:last-of-type {
+  padding-right: 0;
+}
+.col-third {
+  padding-right: 10px;
+  float: left;
+  width: 33.33333333%;
+}
+.col-third:last-of-type {
+  padding-right: 0;
+}
+@media only screen and (max-width: 540px) {
+  .col-half {
+    width: 100%;
+    padding-right: 0;
+  }
+}

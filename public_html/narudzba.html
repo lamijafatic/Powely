@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dobrodošli</title>
+        <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="narudzba.css">
+		<link rel="icon" type="image/x-icon" href="favicon.ico">
+		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+    </head>
+    <body>
+        <div class="header">
+		   
+            <div class="sredina">
+<br>
+
+<p id="welcome">Dobrodošli!</p>
+      <br><br>
+       <a href="konverzija.html" class="onlineshoplink" id="linkshopdd">
+                    <span id="onlineshopnaslov">Konvertuj valutu</span>
+                    <img src="pare.png" alt="korpa" class="korpa">
+                    </a>
+                    <a href="kalkulator.html" class="onlineshoplink" id="linkshopddd">
+                    <span id="onlineshopnaslov">Kalkulator</span>
+                    <img src="kalkulator.png" alt="korpa" class="korpa">
+                    </a>
+                    <br>
+             <p class="podnaslovi">Nabavka--------------------------------------------------</p>
+             <a href="#" class="onlineshoplink" id="linkshop">
+                <span id="onlineshopnaslov">Nabavi robu</span>
+                <img src="nabavka.png" alt="korpa" class="korpa">
+                </a>
+                <a href="https://databases-auth.000webhost.com/sql.php?server=1&db=id20051437_powely&table=nabavka&pos=0" class="onlineshoplink" id="linkshop">
+                    <span id="onlineshopnaslov">Sve nabavke</span>
+                    <img src="lista_nabavka.png" alt="korpa" class="korpa">
+                    </a>
+                 
+                 
+             
+                    <p class="podnaslovi">Registracija uposlenika--------------------------------------</p>
+                    <a href="#" class="onlineshoplink" id="linkshopdrugi">
+                        <span id="onlineshopnaslov">Novi uposlenik</span>
+                        <img src="radnik.png" alt="korpa" class="korpa">
+                        </a>
+                        <a href="#" class="onlineshoplink" id="linkshop">
+                            <span id="onlineshopnaslov">Svi uposlenici</span>
+                            <img src="radnici.png" alt="korpa" class="korpa">
+                            </a>
+                    <p class="podnaslovi">Web stranica----------------------------------------------</p>
+                    <a href="index.php" class="onlineshoplink" id="linkshop">
+                        <span id="onlineshopnaslov_">Powely</span>
+                       
+                        </a>
+
+                        <a href="login_powely.html" class="onlineshoplink" id="linkshop">
+                            <span id="onlineshopnaslov__">Odjavi se</span>
+                            <img src="logout.png" alt="korpa" class="korpa">
+                            </a>
+                            <br>
+                             <p class="podnaslovi">Izdvojeno/limited------------------------------------------</p>
+                            <br>
+                                <FORM>
+    <IMG NAME="mojaSlika" SRC ="mreza.jpg" BORDER=0 WIDTH=250 HEIGHT=250>
+        
+    <SELECT NAME="izborS1" SIZE=1 onChange="mojaSlika.src=form.izborS1.options[form.izborS1.selectedIndex].value;"> 
+
+    <OPTION VALUE ="mreza.jpg">Modni detalj Vosy
+    <OPTION VALUE="ogrlica.jpg">Ogrlica Ammely 
+    <OPTION VALUE="kruna.jpg">Kruna Bigget
+    <OPTION VALUE="kruna2.jpg">Kruna Luna
+    <OPTION VALUE="bros.jpg">Broš Kally
+    <OPTION VALUE="kapa.jpg">Šeširić Liona
+    <OPTION VALUE="kapa2.jpg">Šeširić Piggy
+ 
+    </SELECT>
+
+    </FORM>   
+                               
+       
+            
+            
+                </div>
+        
+        
+        
+        
+        </div>
+        
+        
+
+        <div id="myModalprvi" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <div class="container">
+            <form action="povezivanjeprvi.php" method="post">
+            <div class="row">
+            <h4>Nova nabavka</h4>
+            
+            <div class="input-group input-group-icon">
+                <input type="text" placeholder="Naziv firme" name="imefirme" id="ime"/>
+               
+              </div>
+            
+            <div class="input-group input-group-icon">
+                <input type="text" placeholder="Naziv proizvoda" name="proizvod" id="ime"/>
+               
+              </div>
+          
+            
+            <br>
+            <p>Veličina:</p>
+          
+          <select name="velicina" id="suknje_">
+            <option value="XL">XL</option> 
+            <option value="L">L</option>
+            <option value="M">M</option>
+            <option value="S">S</option>
+            <option value="XS">XS</option>
+            <option value="XXL">XXL</option>
+           
+          </select>
+          <br><br>
+          <p>Boja:</p>
+          
+          <select name="boja" id="matching_outfit">
+          <option value="bijela">Bijela</option> 
+          <option value="crna">Crna</option>
+          <option value="pink">Pink</option>
+          <option value="zelena">Zelena</option>
+          <option value="crvena">Crvena</option>
+          <option value="gold">Gold</option>
+          <option value="plava">Plava</option>
+         
+          
+          
+          
+          </select>
+          <br><br><br><br>
+          <div class="input-group input-group-icon">
+            <input type="text" placeholder="Količina" name="kolicina" id="ime"/>
+            
+          </div>
+          
+            
+            
+            
+            
+            </div>
+              <div class="row">
+                <h4>Unesite vaše podatke</h4>
+                <div class="input-group input-group-icon">
+                    <input type="text" placeholder="Firma" name="firma" id="ime"/>
+                    <div class="input-icon"><i class="fa fa-user"></i></div>
+                  </div>
+                <div class="input-group input-group-icon">
+                  <input type="text" placeholder="Ime" name="ime" id="ime"/>
+                  <div class="input-icon"><i class="fa fa-user"></i></div>
+                </div>
+                <div class="input-group input-group-icon">
+                  <input type="text" name="prezime" id="prezime" placeholder="Prezime"/>
+                  <div class="input-icon"><i class="fa fa-user"></i></div>
+                </div>
+                <div class="input-group input-group-icon">
+                  <input type="mail" name="email" id="email" placeholder="E-mail"/>
+                  <div class="input-icon"><i class="fa fa-envelope"></i></div>
+                </div>
+                <div class="input-group input-group-icon">
+                  <input type="address" name="adresa" id="adresa" placeholder="Adresa"/>
+                  <div class="input-icon"><i class="fa fa-map-marker"></i></div>
+                </div>
+                <div class="input-group input-group-icon">
+                  <input type="address"  name="grad" id="grad"  placeholder="Grad"/>
+                  <div class="input-icon"><i class="fa fa-map-marker"></i></div>
+                </div>
+                <div class="input-group input-group-icon">
+                  <input type="address"  name="drzava" id="drzava"  placeholder="Država"/>
+                  <div class="input-icon"><i class="fa fa-map-marker"></i></div>
+                </div>
+                <div class="input-group input-group-icon">
+                  <input type="tel"  name="brojtelefona" id="brojtelefona"  placeholder="Broj telefona"/>
+                  <div class="input-icon"><i class="fa fa-phone"></i></div>
+                </div>
+              </div>
+              
+              <div class="row">
+                <h4>Plaćanje</h4>
+               
+                <div class="input-group input-group-icon">
+                  <input type="text" name="brojkartice" id="brojkartice" placeholder="Broj kartice"/>
+                  <div class="input-icon"><i class="fa fa-credit-card"></i></div>
+                </div>
+                <div class="col-half">
+                  <div class="input-group input-group-icon">
+                    <input type="text" name="cvc" id="cvc"  placeholder="CVC kartice"/>
+                    <div class="input-icon"><i class="fa fa-user"></i></div>
+                  </div>
+                </div>
+                
+              </div>
+              
+              <br><br>
+              <input type="submit" value="Naruči" name="submit" id="sumbit">
+            </form>
+          </div>
+              
+            </div>
+        </div>
+             <div id="myModaldrugi" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="closedrugi">&times;</span>
+              <div class="container">
+            <form action="povezivanjeprvi.php" method="post">
+            <div class="row">
+            <h4>Novi uposlenik</h4>
+            
+            <div class="row">
+               
+               
+                <div class="input-group input-group-icon">
+                  <input type="text" placeholder="Ime uposlenika" name="imeuposlenika" id="imeuposlenika"/>
+                  <div class="input-icon"><i class="fa fa-user"></i></div>
+                </div>
+                <div class="input-group input-group-icon">
+                  <input type="text"name="prezimeuposlenika" id="prezimeuposlenika" placeholder="Prezime uposlenika"/>
+                  <div class="input-icon"><i class="fa fa-user"></i></div>
+                </div>
+                <div class="input-group input-group-icon">
+                  <input type="mail" name="email" id="email" placeholder="E-mail"/>
+                  <div class="input-icon"><i class="fa fa-envelope"></i></div>
+                </div>
+                <div class="input-group input-group-icon">
+                  <input type="address" name="adresa" id="adresa" placeholder="Adresa"/>
+                  <div class="input-icon"><i class="fa fa-map-marker"></i></div>
+                </div>
+                <div class="input-group input-group-icon">
+                  <input type="address"  name="grad" id="grad"  placeholder="Grad"/>
+                  <div class="input-icon"><i class="fa fa-map-marker"></i></div>
+                </div>
+               
+                <div class="input-group input-group-icon">
+                  <input type="tel"  name="brojtelefona" id="brojtelefona"  placeholder="Broj telefona"/>
+                  <div class="input-icon"><i class="fa fa-phone"></i></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-half">
+                  <h4>Datum rođenja</h4>
+                  <div class="input-group">
+                    <div class="col-third">
+                      <input type="text" name="dan" id="dan" placeholder="DD"/>
+                    </div>
+                    <div class="col-third">
+                      <input type="text" name="mjesec" id="mjesec" placeholder="MM"/>
+                    </div>
+                    <div class="col-third">
+                      <input type="text" name="godina" id="godina" placeholder="YYYY"/>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-half">
+                  <h4>Spol</h4>
+                  <div class="input-group">
+                    <input id="gender-male" type="radio" name="spol" value="musko"/>
+                    <label for="gender-male">Muški</label>
+                    <input id="gender-female" type="radio" name="spol" value="zensko"/>
+                    <label for="gender-female">Ženski</label>
+                  </div>
+                </div>
+              </div>
+              
+             
+            
+            <br>
+            <p>Odjel:</p>
+          
+          <select name="odjel" id="odjel">
+            <option value="dostava">Dostava</option> 
+            <option value="prodaja">Prodaja</option>
+            <option value="vozac">Vozač</option>
+            <option value="ostalo">Ostalo</option>
+            
+           
+          </select>
+          <br><br>
+          
+          <br><br><br><br>
+          <div class="input-group input-group-icon">
+            <input type="text" placeholder="Plata(KM)" name="plata" id="plata"/>
+            
+          </div>
+          
+            
+            
+            
+            
+            </div>
+              
+              
+              
+              <br><br>
+              <input type="submit" value="Unesi" name="submit" id="sumbit">
+            </form>
+          </div>
+              
+            </div>
+        </div>
+        
+            <script>
+            
+          var modalprvi = document.getElementById("myModalprvi");
+          var btnprvi = document.getElementById("linkshop");
+          var spanprvi = document.getElementsByClassName("close")[0];
+          
+         
+            btnprvi.onclick = function() {
+            modalprvi.style.display = "block";
+          }
+          
+         
+          spanprvi.onclick = function() {
+            modalprvi.style.display = "none";
+          }
+          
+          
+          window.onclick = function(event) {
+            if (event.target == modalprvi) {
+              modalprvi.style.display = "none";
+            }
+          }
+                
+                
+                </script>
+                <script>
+            
+            var modaldrugi = document.getElementById("myModaldrugi");
+             var btndrugi = document.getElementById("linkshopdrugi");
+          var spandrugi = document.getElementsByClassName("closedrugi")[0];
+                
+          
+          
+          btndrugi.onclick = function() {
+            modaldrugi.style.display = "block";
+          }
+          
+        
+          spandrugi.onclick = function() {
+            modaldrugi.style.display = "none";
+          }
+          
+          
+          window.onclick = function(event) {
+            if (event.target == modaldrugi) {
+              modaldrugi.style.display = "none";
+            }
+          }
+               </script>
+        
+        
+        
+        </body>
+        
+        
+        </html>
+        
+        

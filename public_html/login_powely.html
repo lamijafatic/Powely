@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+       <head>
+        <link rel="stylesheet" href="login_powely.css">
+       </head>
+       <body>
+
+<div class="screen-1">
+        <p class="naslov">Powely</p>
+        <form action="config.php" method="post">
+    <div class="email">
+      <label  for="email">Email Address</label>
+      <div class="sec-2">
+        <ion-icon name="mail-outline"></ion-icon>
+        <input type="email" id="mail" name="email" placeholder="Username@gmail.com" required/>
+      </div>
+    </div>
+    <div class="password">
+      <label for="password">Password</label>
+      <div class="sec-2">
+        <ion-icon name="lock-closed-outline"></ion-icon>
+        <input class="pas" type="password" id="sifra" name="sifra" required placeholder="············"/>
+        <ion-icon class="show-hide" name="eye-outline"></ion-icon>
+      </div>
+    </div>
+    <input type="submit" name="submit" class="login" value="Login">
+    <div class="footer"><a href="sign_up.html">Sign up</a></div>
+  </form>
+  </div>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+ <SCRIPT LANGUAGE="JavaScript">
+    
+     var datum = new Date();
+    var sati = datum.getHours();
+    
+    if (sati < 10 && sati>6){
+   
+        document.write('<body background="jutro.jpg">')
+    }
+    if (sati >= 10 && sati < 18){
+    document.write('<body background="sunce.jpg">')
+    }
+    if (sati >= 18 && sati < 20){
+    document.write('<body background="zalazak.jpg" >')
+    }
+    if (sati >= 20 && sati <24) {
+     document.write('<body background="mesec.jpg" >')
+    }
+    if ( sati <= 6) {
+     document.write('<body background="mesec.jpg">')
+    }
+   
+   
+    </SCRIPT>
+</body>
+  </html>

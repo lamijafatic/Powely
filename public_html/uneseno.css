@@ -1,0 +1,28 @@
+.div{
+    height:100vh;
+    width:1000px;
+    margin:auto;
+    background-image:url("pozadinaroza2.jpg");
+    text-align: center;
+    justify-content: center;
+}
+.div a{
+    font-size:30px;
+    font-family: "Lucida Handwriting";
+    text-decoration: none;
+    color:black;
+    margin:auto;
+    border:2px solid black;
+    border-radius:10px;
+    background-color: pink;
+}
+body{
+    background-image:url("princeza.jpg");
+}
+p{
+    font-size:40px;
+    font-family: "Lucida Handwriting";
+  
+    color:black;
+    margin:auto;
+}
